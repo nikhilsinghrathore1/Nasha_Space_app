@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Login Form | CodingNepal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+  <body>
+    <div class="center">
+      <h1>Login</h1>
+      <form name="submit-to-google-sheet">
+        <div class="txt_field">
+          <input type="email" id="email" required>
+          <span></span>
+          <label>Email</label>
+        </div>
+        <div class="txt_field">
+          <input type="password" required>
+          <span></span>
+          <label>Password</label>
+        </div>
+        <button type="submit">Login</button>
+        <div class="signup_link">
+          Not a member? <a href="#">Signup</a>
+        </div>
+      </form>
+    </div>
+  </body>
+  
+  <script>
+    const form = document.forms['submit-to-google-sheet']
+    form.addEventListener('submit', e => {
+            // let username = document.getElementById('name').value;
+            let email = document.getElementById('email').value;
+
+            localStorage.setItem('email',email);
+            // localStorage.setItem('password',password);
+    });
+  </script>
+</html>

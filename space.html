@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+               <meta charset="UTF-8">
+               <meta http-equiv="X-UA-Compatible" content="IE=edge">
+               <meta name="viewport" content="width=device-width, initial-scale=1.0">
+               <title>Cosmic Journey</title>
+               <link rel="stylesheet" href="space.css">
+               <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+
+<!--**************** Loader ************** -->
+
+         <div id="loader">
+
+                <div class="loader-circle"></div>
+                <div class="loader-count">
+                               0%
+                </div>
+ </div> 
+
+ <div id="loader2">
+
+          <!-- <img src="bg2.jpg" alt="not showing"> -->
+                <div class="loader-p4bottom">
+                               <span>S</span>
+                               <span>p</span>
+                               <span>a</span>
+                               <span>c</span>
+                               <span>e</span>
+                </div>
+                
+                <div class="loader-p4bottom">
+                               <span>T</span>
+                               <span>o</span>
+                               <span>u</span>
+                               <span>r</span>
+                               <span>i</span>
+                               <span>s</span>
+                               <span>m</span>
+                </div>
+                
+ </div>
+
+
+<!--***************************************  main section after loading screen ************************* -->
+
+                <section id="page1">
+                              <nav id="nav">
+                                             <ul id="navbar">
+                                                            <li id="logo-cont">
+                                                                           <img src="/Images/logo.png" alt="not showing" id="logo">
+                                                                           <span>Space Spire</span>
+                                                            </li>
+                                                            <li id="menu">
+                                                                           <span>Home</span>
+                                                                           <span><a href="/Comparision and inFo/comparison.html" target="_blank">Flight list</a></span>
+                                                                           <span><a href="/Live-Chat-Web/index.html">ChatSpire</a></span>
+                                                                           <span><a href="/space-paper-portfolio/miranda/index.html" target="_blank">News</a></span>
+                                                                           <span><a href="/space-paper-portfolio/medical-form/medical.html" target="_blank">Health care</a></span>
+                                                                           <button id="login" class="btn"><a href="/Login Form - No JavaScript/index.html" target="_blank">login</a></button>
+                                                                           <button id="sign-up" class="btn"><a href="/Login Form - No JavaScript/register.html" target="_blank">sign-up</a></button>
+                                                            </li>
+                                                            <!-- <li> <button id="login" class="btn">Login</button></li> -->
+                                                            <!-- <li> <button id="sign-up" class="btn">sign-up</button></li> -->
+                                             </ul>
+                              </nav>
+                              <div class="main-cont">
+                                             <div id="main-left" class="left">
+                                                            <h1><span>SpaceSpire:</span>Humanity's</h1>
+                                                            <h1>Gateway to Star</h1>
+                                                            <button id="ml-btn" class="btn"><a href="/dist/index.html" target="_blank">Get Started</a></button>
+                                             </div>
+                                             <div id="main-right" class="right">
+                                                            <img src="/Images/hero.png" alt="not showing" id="rocket">
+                                                            <img src="/Images/light-moon.png" alt="not showing" id="li-moon">
+
+                                             </div>
+                                             <img src="/Images/earthPlanet.png" alt="not showing" id="bg-earth">
+                              </div>
+                        </section>
+                <section id="page2">
+                                                <!-- <div id="p2-layer1"></div>
+                                                <div id="p2-layer2"></div>
+                                                <div id="p2-layer3"></div>
+                                                <div id="p2-layer4"></div> -->
+                                             <div class="card" id="cd-nep">
+                                                            <img src="/Images/neptune.png" alt="not showing">
+                                                    <h1>Solar System</h1>
+                                                    <p>Visit an '3d' Model of Our Solar System Where You Can better understand our cosmos </p>
+                                                    <button id="neptune-btn" class="btn"><a href="/dist/index.html" target="_blank">visit</a></button>
+
+                                             </div>
+                                             <div class="card" id="cd-mars">
+                                                            <!-- <img src="/Images/mars.png" alt="not showing"> -->
+                                                            <img src="data:image/jpeg;base64,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" alt="not showing" class="round">
+                                                    <h1>Phenomenon</h1>
+                                                    <p>Understand about the smaller units of our solar system</p>
+                                                    <button id="Mars-btn" class="btn"><a href="https://solarsystem.nasa.gov/solar-system/our-solar-system/overview" target="_blank">Visit</a></button>
+
+                                             </div>
+                                             <div class="card" id="cd-moon">
+                                                            <img src="https://media.istockphoto.com/id/956705946/photo/blackhole.webp?b=1&s=170667a&w=0&k=20&c=gFfpYOOQ9FUh_qBzBUQIiSMLMpkhMLI_FXOrRGToBAc=" alt="not showing" class="round">
+                                                    <h1>Theories</h1>
+                                                    <p>Vist the closet and our most precious natural satelite our moon  </p>
+                                                    <button id="moon-btn" class="btn"><a href="https://science.nasa.gov/astrophysics/focus-areas/what-is-dark-energy" target="_blank">Visit</a></button>
+
+                                             </div>
+                                             <!-- <div class="card" id="cd-merc">
+                                                            <img src="/Images/mercury.png" alt="not showing">
+                                                    <h1>Mercury</h1>
+                                                    <p>Vist the hottest Planet and the fastest planet  also the smallest planet </p>
+                                                    <button id="mercury-btn" class="btn">Visit</button>
+
+                                             </div> -->
+                             
+                        </section>
+                <section id="page3">
+                <div id="p3img">
+                        <img src="/Images/Spaceship.png" alt="not showing" id="spaceship">
+                </div>
+                <div class="p3Text">
+                        <h1>We Have The Best <span class="green">Spaceship</span> In the Earth</h1>
+                        <p>explore the universe in our top of the line spaceships which promise 100% safe travel and luxury stay </p>
+                        <button id="p3-btn" class="btn"><a href="https://www.nasa.gov/exploration/systems/sls/index.html" target="_blank">Explore more</a></button>
+                </div>
+                <div class="circle">
+                        <div class="innercircle">
+                                <span style="--i:0"></span>
+                                <span style="--i:1"></span>
+                                <span style="--i:2"></span>
+                                <span style="--i:3"></span>
+                             
+                        </div>
+                </div>
+                        </section>
+                        <section id="page4">
+                                <h1 id="partner">Partner Companies</h1>
+                                <div class="p4card">
+                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIgAAACICAMAAAALZFNgAAAAY1BMVEUAAAD///+mpqbk5OTX19f7+/tWVlbKysrs7OzU1NTDw8Oqqqrg4OCRkZE2Njbx8fEoKChcXFwuLi5NTU0UFBR8fHyIiIgNDQ2fn58/Pz+5ublwcHCzs7NGRkYfHx8ZGRlnZ2fV8LVzAAABkklEQVR4nO3V4W6DIBQFYK+KoiKIVqdV177/U+6CpO3SNUt0SZPlfD9Kb0E9wUsaRQAAAAAAAAAAAAAAAAAAAAD/2se7A0SN1jaz7ed7U9i4qnvbvjdEN+Rq6S7vDRFd+kKW19O+i7Mx9kbNRR+Hot8m2zqsmsKqeObCVqGouNJcdH7NWpGJd+/FJES6OXOVkyn4a5FQ5SZPBc1+1ackFZZZjpsWDhcDz82SxHiKupJMvXMznI6Khyqn2I+rSPx4Jul7riHRvbyFzklOi6BF74/hgpjSO88+SD44C6ltWm45OYi9X1OT199+mAdDaj0Sgw1hywVpF0RIT125QdZ1mgWNPwRJNbu1Q5sTVUP9fO9dcsrcx9K4Z2h+2WtijJGCyPog2WOQx9cZWcO7MxCVhw5tt4RzImlyQar7jM2Y68GGg9A5HJTMBZGhuPpYfrt4MNnLx/yuWZKNcm26JM8bnCajOyhhWcnN2ydqKySfmlmprT1smqj5QJKjvv2vHTi+AAAAAAAAAAAAAAAAAAAAAH/mC5FIESl7OpprAAAAAElFTkSuQmCC" alt="not showing">
+                                        <h1>SpaceX</h1>
+                                        <!-- <h2 class="green">$300</h2>/ -->
+                                        <p>commercial space travel best know for providing sub-orbital space tourism </p>
+                                        <div class="avg-cost">200,000$</div>
+                                        <div class="p4card-btn btn"><a href="https://www.shopnasa.com" target="_blank">Shop now</a></div>
+                                </div>
+                                <div class="p4card">
+                                        <img src="data:image/png;base64,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" alt="not showing">
+                                        <h1>NASA</h1>
+                                        <div class="avg-cost">350,000$</div>
+                                        <!-- <h2 class="green">$2400</h2> -->
+                                        <p>Private astronaut mission on ISS and not primarily involved in space tourism  </p>
+                                        <div class="p4card-btn btn"><a href="https://www.shopnasa.com" target="_blank">Shop now</a></div>
+                                </div>
+                                <div class="p4card">
+                                        <img src="data:image/png;base64,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" alt="not showing">
+                                        <h1>ISRO</h1>
+                                        <div class="avg-cost">120,000$</div>
+                                        <!-- <h2 class="green">$300</h2> -->
+                                        <p>Non-orbital which primarily focuses on space first goverment agency to land on south pole of moon  </p>
+                                        <div class="p4card-btn btn"><a href="https://www.shopnasa.com" target="_blank">shop now</a></div>
+                                </div>
+                        </section>
+                        <section id="page5">
+                                <img src="/Images/astronaut.png" alt="NOT SHOWING" id="astronaut">
+                                <div class="p5text">
+                                        <h1>We Have <span class="green"> 30 Years of Experience</span></h1>
+                                        <p>we are the oldest and the most secured brand when it comes to space travel our first priority is the safety of your user </p>
+                                        <button id="p3-btn" class="btn"><a href="https://solarsystem.nasa.gov/missions/?order=launch_date+desc&per_page=50&page=0&search=&fs=&fc=&ft=&dp=&category=" target="_blank">Join now</a></button>
+                                </div>
+                                <div class="fadecircle">
+                                        <span style="--i:0"></span>
+                                        <span style="--i:1"></span>
+                                        <span style="--i:2"></span>
+                                        <span style="--i:3"></span>
+                                     
+                                </div>
+
+                                <div class="purpleshade">
+                                        <div id="video-cont">
+                                                <iframe id="solar-video" class="example" src="https://i.giphy.com/media/APq0WQXgQQrKFcBbjP/giphy.webp" frameborder="0"></iframe>
+                                        </div>
+                                </div>
+                        </section>
+                        <section id="last">
+                                <div class="last-1">
+                                        <div class="last-1Flex">
+                                                <img src="/Images/logo.png" alt="not showin" id="last-logo">
+                                                <p>cosmos-J</p>
+                                        </div>
+                                        <p id="last-1p">thank you for visiting our webstie please let us know what you think and how can we improve on your website Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis reprehenderit excepturi libero voluptatibus voluptatum eius. </p>
+                                        <div class="social">
+                                                <i class="ri-instagram-fill"></i>
+                                                <i class="ri-facebook-fill"></i>
+                                                <i class="ri-linkedin-fill"></i>
+                                                <i class="ri-twitter-fill"></i>
+                                        </div>
+                                </div>
+                                <div class="last-2">
+                                        <h1 >Quick link</h1>
+                                        <ul id="last-links">
+                                                <li>home </li>
+                                                <li>Flight list</li>
+                                                <li>Mission history</li>
+                                                <li>Shop</li>
+                                                <li>Experience</li>
+                                        </ul>
+                                </div>
+                                <div class="last-3">
+                                        <h1>Contact us</h1>
+                                        <div id="phone" class="cont-dets">
+                                                <i class="ri-phone-fill"></i>
+                                                <p>:8005602469</p>
+                                        </div>
+                                        <div id="mail" class="cont-dets">
+                                                <i class="ri-mail-fill"></i>
+                                                <p>Shagun696969@gmail.com</p>
+                                        </div>
+                                </div>
+
+                        </section>
+                        
+                        <script>
+                                window.embeddedChatbotConfig = {
+                                chatbotId: "OqMRna6g4Zf36kQUI8W9f",
+                                domain: "www.chatbase.co"
+                                }
+                                </script>
+                                <script
+                                src="https://www.chatbase.co/embed.min.js"
+                                chatbotId="OqMRna6g4Zf36kQUI8W9f"
+                                domain="www.chatbase.co"
+                                defer>
+                                </script>
+                                
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+               <script src="space.js"></script>
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Admin Dashboard</title>
+
+    <!-- Montserrat Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    
+  </head>
+  <body>
+    <div class="grid-container">
+
+      <!-- Header -->
+      <header class="header">
+        <div class="menu-icon" onclick="openSidebar()">
+          <span class="material-icons-outlined">menu</span>
+        </div>
+        <div class="header-left">
+          <span class="material-icons-outlined">search</span>
+        </div>
+        <div class="header-right">
+          <span class="material-icons-outlined">notifications</span>
+          <span class="material-icons-outlined">email</span>
+          <span class="material-icons-outlined">account_circle</span>
+        </div>
+      </header>
+      <!-- End Header -->
+
+      <!-- Sidebar -->
+      <aside id="sidebar">
+        <div class="sidebar-title">
+          <div class="sidebar-brand">
+            <!-- <span class="material-icons-outlined">shopping_cart</span> SpiceSpire -->
+            <span class="material-icons-outlined">
+              rocket_launch
+              </span>SpiceSpire
+          </div>
+          <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+        </div>
+
+        <ul class="sidebar-list">
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">dashboard</span> Dashboard
+            </a>
+          </li>
+          <!-- <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">inventory_2</span> Products
+            </a>
+          </li> -->
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">category</span> Categories
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">groups</span> Customers
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="scrolltrigger.html" target="_blank">
+              <span class="material-icons-outlined">fact_check</span> Exoplanets
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="/pokemon-style-game-main/index.html" target="_blank">
+              <span class="material-icons-outlined">poll</span> game
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">settings</span> Settings
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <!-- End Sidebar -->
+
+      <!-- Main -->
+      <main class="main-container">
+        <div class="main-title">
+          <h2>Tour Selector</h2>
+        </div>
+
+        <div class="main-cards">
+
+          <div class="card">
+            <div class="card-inner">
+              <h3>Choose Planet</h3>
+              <!-- <span class="material-icons-outlined">inventory_2</span> -->
+              <span class="material-icons-outlined">
+                public
+                </span>
+            </div>
+            <!-- <h1>249</h1> -->
+            <div class="select-btm">
+
+              <select  id="planet-selector" class="Select-inp">
+                <option value="moon">Moon</option>
+                <option value="saturn">Saturn</option>
+                <option value="mars">Mars</option>
+                <option value="venus">Venus</option>
+              </select>
+              <button id="submit-planet">submit</button>
+            </div>
+          </div>
+
+          <div class="card" id="site-visit">
+            <div class="card-inner">
+              <h3>Sites to Visit</h3>
+              <!-- <span class="material-icons-outlined">category</span> -->
+              <span class="material-icons-outlined">
+                explore
+                </span>
+            </div>
+            <!-- <h1>25</h1> -->
+            <div class="select-btm">
+
+              <select  id="planet-selector" class="Select-inp">
+                <option value="mawrth">Mawrth Valis</option>
+                <option value="olympus">Olympus Mons</option>
+                <option value="Iani">Iani chos</option>
+                <option value="Rabe">Rabe Crater</option>
+              </select>
+              <button id="sbsite">submit</button>
+            </div>
+          </div>
+
+          <div class="card" id="Duration">
+            <div class="card-inner">
+              <h3>Duration of Travel</h3>
+              <span class="material-icons-outlined">groups</span>
+            </div>
+            <!-- <h1>1500</h1> -->
+            <div class="flex-btn">
+              <input type="text" name="" id="number-days">
+              <button class="submit" id="sbduration">submit</button>
+            </div>
+          </div>
+
+          <div class="card" id="book-date">
+            <div class="card-inner">
+              <h3 id="calender">Calender</h3>
+              <!-- <span class="material-icons-outlined">notification_important</span> -->
+              <span class="material-icons-outlined">
+                calendar_month
+                </span>
+                <button class="submit" id="date-submit">submit</button>
+              </div>
+              <label for="start">Book date</label>
+              
+              <input type="date" id="start" name="trip-start" value="2023-07-22" min="2023-11-01" max="2070-12-31" />
+              
+            </div>
+
+      
+
+        </div>
+
+        <div id="final-price">
+          Final Price : <span id="diff-price">500$</span>
+        </div>
+        <div id="possibility">
+          possibility: <span id="diff-price">78%</span>
+        </div>
+
+        <div class="charts">
+
+          <div id="barchart" class="charts-card">
+            <h2 class="chart-title">Probabilty of Safe Travel:</h2>
+            <div id="bar-chart"></div>
+          </div>
+
+          <div id="areachart" class="charts-card">
+            <h2 class="chart-title">Travel Expenses:</h2>
+            <div id="area-chart"></div>
+          </div>
+
+        </div>
+        <div class="4-flex">
+
+          <div id="confirm">
+            <h1 class="confirm-h">Confirm Your Flight :</h1>
+            <button id="book-now-btn" class="confirm-btn" type=""><a href="/summary/summary.html">Book now</a></button>
+          </div>
+        </div>
+      </main>
+      <!-- End Main -->
+
+    </div>
+
+    <script>
+      window.embeddedChatbotConfig = {
+      chatbotId: "OqMRna6g4Zf36kQUI8W9f",
+      domain: "www.chatbase.co"
+      }
+      </script>
+      <script
+      src="https://www.chatbase.co/embed.min.js"
+      chatbotId="OqMRna6g4Zf36kQUI8W9f"
+      domain="www.chatbase.co"
+      defer>
+      </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.5/apexcharts.min.js"></script>
+    <!-- Custom JS -->
+    <script src="dashboard.js"></script>
+  </body>
+</html>

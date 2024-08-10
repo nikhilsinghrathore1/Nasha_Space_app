@@ -1,0 +1,189 @@
+
+.slide1-1 {
+  position: absolute;
+  background-image: url(/assets/Slider1-1.png);
+  background-size: cover;
+  /* padding-top: 20px; */
+  z-index: 0;
+}
+
+#red-hook-2 {
+  font-family: Ubuntu, Helvetica, Arial, sans-serif;
+  font-size: 23px;
+  line-height: 52px;
+  margin-left: 20px;
+  color: white;
+  opacity: 0;
+  transition: all 0.4s;
+  margin-top: 20px;
+}
+
+.slide1-1:hover #red-hook-2 {
+  opacity: 1;
+  z-index: 5;
+}
+.slide2-2:hover #red-hook-2 {
+  opacity: 1;
+  z-index: 5;
+}
+.slide3-3:hover #red-hook-2 {
+  opacity: 1;
+  z-index: 5;
+}
+.slide4-4:hover #red-hook-2 {
+  opacity: 1;
+  z-index: 5;
+}
+.slide5-5:hover #red-hook-2 {
+  opacity: 1;
+  z-index: 5;
+}
+.slide6-6:hover #red-hook-2 {
+  opacity: 1;
+  z-index: 5;
+}
+.slide7-7:hover #red-hook-2 {
+  opacity: 1;
+  z-index: 5;
+}
+
+#red-container-2 {
+  width: 390px;
+  height: 58px;
+  background-color: #e43e4c;
+  transform: rotate(-5deg) scale(1.1);
+  transition: all 0.5s;
+  margin-bottom: 12px;
+  opacity: 0;
+  font-size: 18px;
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: center;
+  font-weight: 600;
+  padding-top: 15px;
+  font-style: italic;
+  color: white;
+}
+
+.slide1-1:hover #red-container-2 {
+  opacity: 1;
+  animation: grow 0.4s linear;
+}
+.slide2-2:hover #red-container-2 {
+  opacity: 1;
+  animation: grow 0.4s linear;
+}
+.slide3-3:hover #red-container-2 {
+  opacity: 1;
+  animation: grow 0.4s linear;
+}
+.slide4-4:hover #red-container-2 {
+  opacity: 1;
+  animation: grow 0.4s linear;
+}
+.slide5-5:hover #red-container-2 {
+  opacity: 1;
+  animation: grow 0.4s linear;
+}
+.slide6-6:hover #red-container-2 {
+  opacity: 1;
+  animation: grow 0.4s linear;
+}
+.slide7-7:hover #red-container-2 {
+  opacity: 1;
+  animation: grow 0.4s linear;
+}
+
+@keyframes grow {
+  0% {
+    width: 0px;
+    font-size: 0px;
+  }
+  50% {
+    width: 200px;
+    /* font-size: 10px; */
+  }
+  100% {
+    width: 390px;
+    font-size: 18px;
+  }
+}
+
+.BKG-2 {
+  position: absolute;
+  background-color: #340005;
+  opacity: 0;
+  height: 534px;
+  width: 370px;
+  z-index: -2;
+  transition: all 2.3;
+}
+
+.slide1-1:hover .BKG-2 {
+  opacity: 88%;
+}
+
+.slide2-2:hover .BKG-2 {
+  opacity: 88%;
+}
+
+.slide3-3:hover .BKG-2 {
+  opacity: 88%;
+}
+
+.slide4-4:hover .BKG-2 {
+  opacity: 88%;
+}
+
+.slide5-5:hover .BKG-2 {
+  opacity: 88%;
+}
+
+.slide6-6:hover .BKG-2 {
+  opacity: 88%;
+}
+
+.slide7-7:hover .BKG-2 {
+  opacity: 88%;
+}
+
+.slide2-2 {
+  background-image: url(/assets/Slider1-2.png);
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+}
+
+.slide3-3 {
+  background-image: url(/assets/Slider1-3.png);
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+}
+
+.slide4-4 {
+  background-image: url(/assets/Slider1-4.png);
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+}
+
+.slide5-5 {
+  background-image: url(/assets/Slider1--5.png);
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+}
+
+.slide6-6 {
+  background-image: url(/assets/Slider1-6.png);
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+}
+
+.slide7-7 {
+  background-image: url(/assets/Slider1-7.png);
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+}

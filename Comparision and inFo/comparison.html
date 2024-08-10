@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+               <meta charset="UTF-8">
+               <meta http-equiv="X-UA-Compatible" content="IE=edge">
+               <meta name="viewport" content="width=device-width, initial-scale=1.0">
+               <title>comparision</title>
+               <link rel="stylesheet" href="comparison.css">
+               <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+               <div id="main">
+                      <div id="page1">
+                              <div class="p1-top">
+
+                                             <div class="top-first">
+                                                            <p>Explore <div class="round"><i class="ri-arrow-down-s-line"></i></div></p>
+                                                            
+                                                            <input type="text" id="search" placeholder="Search">
+                                             </div>
+                                             <div class="top-second">
+                                                            <img src="/images/logo.png" alt="not showing">
+                                                            <p>SpaceSpire</p>
+                                                            
+                                             </div>
+                                             <div class="top-third">
+                                                            <button class="top-btn first-btn"><i class="ri-rocket-line"></i>Companies</button>
+                                                            <button class="top-btn"><i class="ri-planet-line"></i>Map</button>
+                                             </div>
+                              </div>
+
+                              <div class="p1-home">
+                                             <div class="home-top">
+
+                                                            <p>Home / <span class="bold">Solar System Exploration</span></p> 
+                                             </div>
+                                             <div class="home-bottom">
+                                                            <ul class="nav">
+                                                                           <li>Planet Exploration HUB <i class="ri-arrow-down-s-line"></i></li>
+                                                                           <li>Our Solar System <i class="ri-arrow-down-s-line"></i></li>
+                                                                           <li>Planets <i class="ri-arrow-down-s-line"></i></li>
+                                                                           <li>Astoroids,comets </li>
+                                                                           <li>More</li>
+                                                            </ul>
+                                             </div>
+                              </div>
+
+                              <div class="p1-last">
+                                    <div class="layer">
+                                             <h1>Solar System <br>Exploration</h1>
+                                             <p class="planetry">Explore our planetary neighborhood: The Sun, planets, moons, and millions of asteroids, comets, and meteoroids.</p>
+                                             <p class="company">Collabrated Companies</p>
+                                             <div class="flex">
+                                                            <span class="highlight">15</span>
+                                                            <h2>Active Companies</h2>
+                                             </div>
+                                    </div>         
+                              </div>
+
+                              
+                      </div>      
+                      <div id="page2">
+                              <div class="list-companies">
+                                             <div class="cont-top">
+                                                            <p>Partner Companies</p>
+                                             </div>
+                                     <div class="flex list-flex">
+
+                                         
+                                             <div class="cont" id="cont1">
+                                                            <div class="img">
+                                                                           <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHcAAAB3CAMAAAAO5y+4AAAAq1BMVEUAM97///8AMN7///0ALt4ALN4AI9wAKt4AGt3u9PkAJ9ji6PU2TNr6/PwADtv1+PsAHtzV2/MAANhEWtxmedtsf98qSNg6UNmVp+DQ2ukAHM9ifdmCj+YAG9bJ0u3Ay+SHkuKnsua9x+w8UtCrtuNVatpLX9qquuJ0hdqeqeja4fPM1usSONO8x+YmPNMALtOQnuN+j9VgcNm4we1XaeFweuJJZsx7huIcOd2tSgYeAAADZklEQVRoge2XW3PiOBBG3ZJvsmxLBmLCbHCwgwm2uTgks+H//7JtmTCzM2vmSaL2QadIpcJDDl93q2Ucx2KxWCwWi8VisVgsFovFMoIbBA65vzWczh6C3HWCO0qJ488fxaL9Rv8Kn8jSd+8lDmfFMyz4LJmt2rJ6iv27WF2yKngLnJf0RawFBV7fQ+xtXqFrGVDWwZZyAKC0Cc17ZUmxxoLSJGk7lA6vneEeuzhUKqL6AeiUcgi8NxvYmwbRAeBLBxj64gU2MamV21XEC/gh/tKrX0eDOyTIxWH9w/YrZ3NeGYuqH7Xie7VnyBqETxRKPpYVu/xm6ATjPi4opQzoaF56MHKOiIzLZCzplffUhNY7NuJPVlibqDLxz+1tJdadlpGBKgdpuf5DVLwVprp3lU8cktbs7XZrMS3Xfgum29jzK2Cr8U0xhIUy1VxjN31aS5IB9GL07Awkdah3T3npfAt5+oiVLG83N9tprrH/UiWQ+fOEUtHdsvJTpHE5YrtceVLn9X3SqP9+Y6pYUeYaW0s2jhdvhZqZZsKxsWxsqigt4jTI9Wn9t8JfVpc9scrFxTGStlp6jsbHdvcIRfqZJINq9v1GYyltlxqdhDhRhV1lXxk/xi9bZK9xMXpTh+xnCZTf0Tr4XoqxqDhQ3VnjQMmqPrMSoGmuKeOxhUH7VEqdu2Ipqm8cS4y3wMUmtr+XGf/ktVYpEgkR4xzT4nr77H9/psES90e93/9wpNIMVqqh7Opl/ylxe9C8jUkeh7KHrFKhnn+KEnRzfvkuwpuN9uud5Kw8zhOh8tJ/PdLQCj8Jf12IbFsfQwMPFV4MIs9Uaemlk3TISKHa4mfhf098z8xzuV+DeLwqE4ElRqvY7/Fcvaw+pBGn4wbhZMmHJUVBlRl7mnRqSbPHummLnYGsnp9O4s/1MLwC9zJNOlxXfIHOBetOfuCH8UbzFKMznH6+q3PKqv6UiTXgZcteW0z93FQP8yhQRlffQBEShOmh7guGIlE0Hzspw4ckz3i5KNo+zw9nPwxczTkdGR5OZcvUrZ419WEp1bS6myydw27nnFFIDLSUnPsM+5nwAp2hDK6O89yTZRmaUA4EnxSVD9Molb+eStchx4WhM6OI/Ekqx7tHorM5r8VisVgsFovFYrFYLBaL5f/MP9yTOEDJ9Km4AAAAAElFTkSuQmCC" alt="not showing">
+                                                            </div>
+                                                            <div>
+                                                                           <h1 class="cont-h">Blue origin</h1>
+                                                                           <p class="cont-p">The company makes rocket engines for United Launch </p>
+                                                            </div>
+                                             </div>
+                                             <div class="cont" id="cont2">
+                                                            <div class="img">
+                                                                           <img src="data:image/png;base64,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" alt="not showing">
+                                                            </div>
+                                                            <div>
+                                                                           <h1 class="cont-h">iSRO</h1>
+                                                                           <p class="cont-p">The goverment space organisation that makes country proud </p>
+                                                            </div>
+                                             </div>
+                                             <div class="cont" id="cont3">
+                                                            <div class="img">
+                                                                           <img src="https://www.nasa.gov/wp-content/themes/nasa/assets/images/nasa-logo.svg" alt="not showing">
+                                                            </div>
+                                                            <div>
+                                                                           <h1 class="cont-h">NASA</h1>
+                                                                           <p class="cont-p">U.S. government agency that is responsible for science and technology related to air and space </p>
+                                                            </div>
+                                             </div>
+                                             <div class="cont" id="cont4">
+                                                            <div class="img">
+                                                                           <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIcAAACHCAMAAAALObo4AAAAYFBMVEUAAAD///9fX19RUVFEREQ2NjaXl5f39/dOTk7t7e0jIyPGxsazs7PS0tLw8PCJiYkdHR0JCQlkZGQTExNwcHDe3t55eXmenp4/Pz9JSUm8vLynp6fMzMxYWFgqKip/f3+y7eCQAAABfklEQVR4nO3Uy4JDMBQGYIcQEuJW10b7/m85J0Kn7exYmMX/bTiSxi+OBgEAAAAAAAAAAAAAAAAAAADAP6bUo6rqi0P0ybMRQrUX5kiTXM/NdfdfTUNXJMsVu/B+z2dB+nZwnbgjT/ZcmK0g7UfN4I/jayDhYj8nyTkGomx0C/FJfvx5StIidRbBa2XUp1EUTZZ6N9iQ9G86p0JEq7QO6lE4E89zY7eM6NbeJc3j8RicY1ax4wrOsR6DxD03s2S2HPr3J2q4s/y5149iKDPKjr4Rb3nteL7mkCuiyQ93PsBHjliS1VoPrwtVwe8rPhWDV/X7Lci0Lsc9WS3cBnOe55ao/JPD0MdNe8ObYU15MsiGjHI5pr1u75ZpS3JyOex+vf7O4Rp1qrpTXer64+0T4R2PvidwkJYbdjfXwSj3gpun0kSdm5dweaZFROgtFe/B0lTf4ypsFP9B7bNaN2srQg6tmjBU68QpbJYTOQAAAAAAAAAAAAAAAAAAAADe/ABbTA/jICjYtgAAAABJRU5ErkJggg==" alt="not showing">
+                                                            </div>
+                                                            <div>
+                                                                           <h1 class="cont-h">spaceX </h1>
+                                                                           <p class="cont-p">SpaceX is the first private company to develop a liquid-propellant rocket that has reached orbit; </p>
+                                                            </div>
+                                             </div>
+
+                                       </div>
+                                     <!-- <div class="flex list-flex">
+
+                                         
+                                             <div class="cont" id="cont1">
+
+                                                <div class="img">
+                                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIcAAACHCAMAAAALObo4AAAAYFBMVEUAAAD///9fX19RUVFEREQ2NjaXl5f39/dOTk7t7e0jIyPGxsazs7PS0tLw8PCJiYkdHR0JCQlkZGQTExNwcHDe3t55eXmenp4/Pz9JSUm8vLynp6fMzMxYWFgqKip/f3+y7eCQAAABfklEQVR4nO3Uy4JDMBQGYIcQEuJW10b7/m85J0Kn7exYmMX/bTiSxi+OBgEAAAAAAAAAAAAAAAAAAADAP6bUo6rqi0P0ybMRQrUX5kiTXM/NdfdfTUNXJMsVu/B+z2dB+nZwnbgjT/ZcmK0g7UfN4I/jayDhYj8nyTkGomx0C/FJfvx5StIidRbBa2XUp1EUTZZ6N9iQ9G86p0JEq7QO6lE4E89zY7eM6NbeJc3j8RicY1ax4wrOsR6DxD03s2S2HPr3J2q4s/y5149iKDPKjr4Rb3nteL7mkCuiyQ93PsBHjliS1VoPrwtVwe8rPhWDV/X7Lci0Lsc9WS3cBnOe55ao/JPD0MdNe8ObYU15MsiGjHI5pr1u75ZpS3JyOex+vf7O4Rp1qrpTXer64+0T4R2PvidwkJYbdjfXwSj3gpun0kSdm5dweaZFROgtFe/B0lTf4ypsFP9B7bNaN2srQg6tmjBU68QpbJYTOQAAAAAAAAAAAAAAAAAAAADe/ABbTA/jICjYtgAAAABJRU5ErkJggg==" alt="not showing">
+                                                </div>
+                                                <div>
+                                                        <h1 class="cont-h">spaceX </h1>
+                                                        <p class="cont-p">The company makes rocket engines only for naman cause he is virgin </p>
+                                                </div>
+                                             </div>
+
+                                             <div class="cont" id="cont2">
+                                                            <div class="img">
+                                                                           <img src="data:image/png;base64,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" alt="not showing">
+                                                            </div>
+                                                            <div>
+                                                                           <h1 class="cont-h">Virgin Galactic</h1>
+                                                                           <p class="cont-p"> </p>
+                                                            </div>
+                                             </div>
+
+                                             <div class="cont" id="cont3">
+                                                            <div class="img">
+                                                                           <img src="https://www.nasa.gov/wp-content/themes/nasa/assets/images/nasa-logo.svg" alt="not showing">
+                                                            </div>
+                                                            <div>
+                                                                           <h1 class="cont-h">NASA</h1>
+                                                                           <p class="cont-p">NASA naam to suna hi hoga </p>
+                                                            </div>
+                                             </div> 
+                                              <div class="cont" id="cont4">
+                                                            <div class="img">
+                                                                           <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIcAAACHCAMAAAALObo4AAAAYFBMVEUAAAD///9fX19RUVFEREQ2NjaXl5f39/dOTk7t7e0jIyPGxsazs7PS0tLw8PCJiYkdHR0JCQlkZGQTExNwcHDe3t55eXmenp4/Pz9JSUm8vLynp6fMzMxYWFgqKip/f3+y7eCQAAABfklEQVR4nO3Uy4JDMBQGYIcQEuJW10b7/m85J0Kn7exYmMX/bTiSxi+OBgEAAAAAAAAAAAAAAAAAAADAP6bUo6rqi0P0ybMRQrUX5kiTXM/NdfdfTUNXJMsVu/B+z2dB+nZwnbgjT/ZcmK0g7UfN4I/jayDhYj8nyTkGomx0C/FJfvx5StIidRbBa2XUp1EUTZZ6N9iQ9G86p0JEq7QO6lE4E89zY7eM6NbeJc3j8RicY1ax4wrOsR6DxD03s2S2HPr3J2q4s/y5149iKDPKjr4Rb3nteL7mkCuiyQ93PsBHjliS1VoPrwtVwe8rPhWDV/X7Lci0Lsc9WS3cBnOe55ao/JPD0MdNe8ObYU15MsiGjHI5pr1u75ZpS3JyOex+vf7O4Rp1qrpTXer64+0T4R2PvidwkJYbdjfXwSj3gpun0kSdm5dweaZFROgtFe/B0lTf4ypsFP9B7bNaN2srQg6tmjBU68QpbJYTOQAAAAAAAAAAAAAAAAAAAADe/ABbTA/jICjYtgAAAABJRU5ErkJggg==" alt="not showing">
+                                                            </div>
+                                                            <div>
+                                                                           <h1 class="cont-h">spaceX </h1>
+                                                                           <p class="cont-p">The company makes rocket engines only for naman cause he is virgin </p>
+                                                            </div>
+                                             </div>
+
+                                        </div> -->
+                                       <!-- <div class="flex">
+
+                                       </div> -->
+                              </div>
+                              <div class="overView">
+                                             <div class="overview-main">
+                                                <h1 id="magic-heading">
+                                                        <span class="magic">
+                                                          <span class="magic-star">
+                                                            <svg viewBox="0 0 512 512">
+                                                            <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                                                            </svg>
+                                                          </span>
+                                                          <span class="magic-star">
+                                                            <svg viewBox="0 0 512 512">
+                                                            <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                                                            </svg>
+                                                          </span>
+                                                          <span class="magic-star">
+                                                            <svg viewBox="0 0 512 512">
+                                                            <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                                                            </svg>
+                                                          </span>
+                                                          <span class="magic-text">OverView</span>
+                                                        </span>
+                                                       
+                                                           <p id="overView-text">Explore form all the options that are present in this current time and in the time that has gone but what is time , well time is the measure of the ages of everything but what is age , age the the amount of time a thing has spent so it means that there is no such thing as time and there is no such thing as age so what is the point in living well the point is not do things or to help other the point is to expirience things expirience life as it happnes around you how everything is so different yet so similar  </p>
+
+                                                           
+                                                                <!--first prototype switich images -->
+                                                           <!-- <div class="video">
+                                                            <div class="Vtop">
+                                                                           <div class="Vt-1">
+                                                                                          <div class="layer1"><h1 class="sub-h">Avg Cost: <span>20000$</span></h1>
+                                                                                                         <span class="sub-p">very expensive but not that expensive</span></div>
+                                                                                          
+                                                                           </div>
+                                                                           <div class="Vt-2">
+                                                                                          <div class="layer1"><h1 class="sub-h">Rocket Available <span></span></h1>
+                                                                                                         <span class="sub-p">The company has three rocket engines in production including the BE-3U, BE-3PM and BE-4. </span></div>
+                                                                           </div>
+                                                            </div>
+                                                            <div class="Vbottom">
+                                                                           <div class="Vbt-1">
+                                                                                          <div class="layer1"><h1 class="sub-h">Orbits Reach <span></span></h1>
+                                                                                                         <span class="sub-p"> BE-3PM engine, which sends the capsule to an apogee (Sub-Orbital) of 100.5 kilometres (62.4 mi)  </span></div>
+                                                                           </div>
+                                                                           <div class="Vbt-2">
+                                                                                          <div class="layer1"><h1 class="sub-h">User's Review <span></span></h1>
+                                                                                                         <span class="sub-p"> BE-3PM engine, which sends the capsule to an apogee (Sub-Orbital) of 100.5 kilometres (62.4 mi)  </span></div>    
+                                                                           </div>
+                                                            </div>
+                                                           </div>
+                                             </div> -->
+
+                                             <div class="second-prototype">
+                                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/tGw-hN8hKXw" title="It&#39;s Time" frameborder="0" allow="accelerometer; play; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                             </div>
+                                             <div class="box-1 boxy">
+                                                <div class="layer1"><h1 class="sub-h">Avg Cost: <span>200000$</span></h1>
+                                                        <span class="sub-p">extra-ordinary expirience in ordinary prices</span></div>
+                                             </div>
+                                             <div class="box-2 boxy">
+                                                <div class="layer1"><h1 class="sub-h">Rocket Available <span></span></h1>
+                                                        <span class="sub-p">The company has three rocket engines in production including the BE-3U, BE-3PM and BE-4. </span></div>
+                                             </div>
+                                             <div class="box-4 boxy">
+                                                <div class="layer1"><h1 class="sub-h">Orbits Reach <span></span></h1>
+                                                        <span class="sub-p"> BE-3PM engine, which sends the capsule to an apogee (Sub-Orbital) of 100.5 kilometres (62.4 mi)  </span></div>
+                                             </div>
+                                             <div class="box-3 boxy">
+                                                <div class="layer1"><h1 class="sub-h">Basic Amenities <span></span></h1>
+                                                        <span class="sub-p"> list of basic amenities provided  </span></div>    
+                                             </div>
+                              </div>
+                      </div>  
+
+                      <div id="page3">
+                        <div class="space-cards-class">
+       
+                                <div class="space-cards" id="space-card-1">
+                                        
+                                        <div class="card-layer" id="hide-layer1">
+                                                <div class="card-first card-slot">
+                                                       <div class="image image5"></div>
+                                                        <div class="card-text">
+                                                                <h1>loki Volcano </h1>
+                                                                <p class="card-p-fir">on Jupiter's moon</p>
+                                                                <p class="card-p-sec">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nobis repellat architecto eos harum.</p>
+
+                                                        </div>
+                                                </div>
+
+                                                <div class="card-second card-slot">
+                                                        <div class="card-text">
+                                                                <h1>Earth</h1>
+                                                                <p class="card-p-fir">Ahemdabad</p>
+                                                                <p class="card-p-sec">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nobis repellat architecto eos harum.</p>
+                                                                
+                                                        </div>
+                                                        <div class="image image6"></div>
+                                                </div>
+
+                                                <div class="card-third card-slot">
+                                                        <div class="image image7"></div>
+                                                        <div class="card-text">
+                                                                <h1>Europa</h1>
+                                                                <p class="card-p-fir">juipter's moon</p>
+                                                                <p class="card-p-sec">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nobis repellat architecto eos harum.</p>
+                                                                
+                                                        </div>
+                                                </div>
+                                                <div class="card-fourth card-slot">
+                                                        <div class="card-text">
+                                                                <h1>pluto</h1>
+                                                                <p class="card-p-fir">kuiper belt</p>
+                                                                <p class="card-p-sec">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nobis repellat architecto eos harum.</p>
+                                                                
+                                                        </div>
+                                                        <div class="image image8"></div>
+                                                </div>
+                                        </div>
+
+
+                                    <img src="astro.png" alt="">
+                                    <p class="heading">SPACE</p>
+                                    <p class="explore-the">EXPLORING THE</p>
+                                    <p class="line">||||</p>
+                                    <p class="bars">_</p>
+                                    <p class="bars2">_</p>
+                                    <div class="box-shadow-div"></div>
+                                </div>
+                        
+                        
+                                <div class="space-cards" id="space-card-2">
+
+
+                                          <div class="card-layer" id="hide-layer2">
+                                                <div class="card-first card-slot" >
+                                                       <div class="image image1"></div>
+                                                        <div class="card-text">
+                                                                <h1>Best location</h1>
+                                                                <p class="card-p-fir">Olymps mons</p>
+                                                                <p class="card-p-sec">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nobis repellat architecto eos harum.</p>
+
+                                                        </div>
+                                                </div>
+
+                                                <div class="card-second card-slot">
+                                                        <div class="card-text">
+                                                                <h1>Best Time</h1>
+                                                                <p class="card-p-fir">3 months</p>
+                                                                <p class="card-p-sec">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nobis repellat architecto eos harum.</p>
+                                                                
+                                                        </div>
+                                                        <div class="image image2"></div>
+                                                </div>
+
+                                                <div class="card-third card-slot">
+                                                        <div class="image image3"></div>
+                                                        <div class="card-text">
+                                                                <h1>Best Route</h1>
+                                                                <p class="card-p-fir">Astroid belt</p>
+                                                                <p class="card-p-sec">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nobis repellat architecto eos harum.</p>
+                                                                
+                                                        </div>
+                                                </div>
+                                                <div class="card-fourth card-slot">
+                                                        <div class="card-text">
+                                                                <h1>Time to Reach </h1>
+                                                                <p class="card-p-fir">Astroid belt</p>
+                                                                <p class="card-p-sec">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nobis repellat architecto eos harum.</p>
+                                                                
+                                                        </div>
+                                                        <div class="image image4"></div>
+                                                </div>
+                                        </div>
+
+
+                                    <img src="Mars.png" alt="">
+                              
+                                    <p class="heading">MARS</p>
+                                    <p class="explore-the">
+                                        Mars is the fourth planet from the Sun in our solar system, often called the "Red Planet" due to its reddish appearance.</p>
+                                    <p class="line">||||</p>
+                                    <p class="bars">_</p>
+                                    <p class="bars2">_</p>
+                                    <div class="box-shadow-div"></div>
+                                    <div class="box-shadow-planet"></div>
+                                </div>
+                        
+                        
+                                <div class="space-cards" id="space-card-3">
+
+                                                 <div class="card-layer" id="hide-layer3">
+                                                <div class="card-first card-slot">
+                                                       <div class="image image9"></div>
+                                                        <div class="card-text">
+                                                                <h1>Best location</h1>
+                                                                <p class="card-p-fir">Riverbend Park</p>
+                                                                <p class="card-p-sec">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nobis repellat architecto eos harum.</p>
+
+                                                        </div>
+                                                </div>
+
+                                                <div class="card-second card-slot">
+                                                        <div class="card-text">
+                                                                <h1>Best Time</h1>
+                                                                <p class="card-p-fir">3 months</p>
+                                                                <p class="card-p-sec">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nobis repellat architecto eos harum.</p>
+                                                                
+                                                        </div>
+                                                        <div class="image image10"></div>
+                                                </div>
+
+                                                <div class="card-third card-slot">
+                                                        <div class="image image11"></div>
+                                                        <div class="card-text">
+                                                                <h1>Best Route</h1>
+                                                                <p class="card-p-fir">Astroid belt</p>
+                                                                <p class="card-p-sec">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nobis repellat architecto eos harum.</p>
+                                                                
+                                                        </div>
+                                                </div>
+                                                <div class="card-fourth card-slot">
+                                                        <div class="card-text">
+                                                                <h1>Time to Reach </h1>
+                                                                <p class="card-p-fir">Astroid belt</p>
+                                                                <p class="card-p-sec">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nobis repellat architecto eos harum.</p>
+                                                                
+                                                        </div>
+                                                        <div class="image image12"></div>
+                                                </div>
+                                        </div>                                        
+
+
+                                    <img src="jupiter.png" alt="">                                   
+                                    <p class="heading">JUPITER</p>
+                                    <p class="explore-the">
+                                        Jupiter is the largest planet in our solar system, a gas giant primarily composed of hydrogen and helium.</p>
+                                    <p class="line">||||</p>
+                                    <p class="bars">_</p>
+                                    <p class="bars2">_</p>
+                                    <div class="box-shadow-div"></div>
+                                    <div class="box-shadow-planet"></div>
+                                </div>
+                        
+                        
+                                <div class="space-cards" id="space-card-4">
+
+                                                <div class="card-layer" id="hide-layer4">
+                                                <div class="card-first card-slot">
+                                                       <div class="image image13"></div>
+                                                        <div class="card-text">
+                                                                <h1>Best location</h1>
+                                                                <p class="card-p-fir">Riverbend Park</p>
+                                                                <p class="card-p-sec">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nobis repellat architecto eos harum.</p>
+
+                                                        </div>
+                                                </div>
+
+                                                <div class="card-second card-slot">
+                                                        <div class="card-text">
+                                                                <h1>Best Time</h1>
+                                                                <p class="card-p-fir">3 months</p>
+                                                                <p class="card-p-sec">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nobis repellat architecto eos harum.</p>
+                                                                
+                                                        </div>
+                                                        <div class="image image14"></div>
+                                                </div>
+
+                                                <div class="card-third card-slot">
+                                                        <div class="image image15"></div>
+                                                        <div class="card-text">
+                                                                <h1>Best Route</h1>
+                                                                <p class="card-p-fir">Astroid belt</p>
+                                                                <p class="card-p-sec">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nobis repellat architecto eos harum.</p>
+                                                                
+                                                        </div>
+                                                </div>
+                                                <div class="card-fourth card-slot">
+                                                        <div class="card-text">
+                                                                <h1>Time to Reach </h1>
+                                                                <p class="card-p-fir">Astroid belt</p>
+                                                                <p class="card-p-sec">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nobis repellat architecto eos harum.</p>
+                                                                
+                                                        </div>
+                                                        <div class="image image16"></div>
+                                                </div>
+                                        </div>                                         
+
+                                    <img src="saturn.png" alt="">
+                                    
+                                    <p class="heading">SATURN</p>
+                                    <p class="explore-the">
+                                        Saturn is the sixth planet from the Sun, recognized by its distinctive ring system and a gas giant.</p>
+                                    <p class="line">||||</p>
+                                    <p class="bars">_</p>
+                                    <p class="bars2">_</p>
+                                    <div class="box-shadow-div"></div>
+                                    <div class="box-shadow-planet"></div>
+                                </div>
+                            </div>
+                      </div>
+                      <div id="last">
+                        <button id="last-button"><a href="/dashboard.html">Proceed</a></button>
+                      </div>
+               </div>
+               <script src="comparison.js"></script>
+</body>
+</html>

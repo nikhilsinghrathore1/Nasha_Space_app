@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical_form</title>
+    <link rel="stylesheet" href="medical.css">
+    <link rel="stylesheet" href="text.css">
+</head>
+<body>
+    <div id="container">
+        <div id="left">
+            <h1>
+                <span class="magic">
+                  <span class="magic-star">
+                    <svg viewBox="0 0 512 512">
+                    <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                    </svg>
+                  </span>
+                  <span class="magic-star">
+                    <svg viewBox="0 0 512 512">
+                    <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                    </svg>
+                  </span>
+                  <span class="magic-star">
+                    <svg viewBox="0 0 512 512">
+                    <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                    </svg>
+                  </span>
+                  <span class="magic-text">Medical Form</span>
+                </span>
+            </h1>
+            <div class="contact">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name"/>
+                    <input type="email" name="Email" placeholder="Your Email"/>
+                    <input type="blood group" name="blood-group" placeholder="Blood Group"/>
+                    <div id="divide">
+                        <input type="Height" name="Height" placeholder="Height(in cm)"/>
+                        <input type="Weight" name="Weight" placeholder="Weight"/>
+                    </div>
+                    <input type="disease" name="disease" placeholder="Any Disease"/>
+                    <input type="disability" name="disability" placeholder="Any Disability"/>
+                    <div id="submit-btn">
+                        <button type="submit" class="btn">Submit</button>
+                    </div>
+                </form>
+                <div id="submit-btn">
+                    <span id="msg"></span>
+                </div>
+                <span id="msg"></span>
+            </div>
+        </div>
+        <div id="right">
+            <img src="https://i.pinimg.com/1200x/aa/76/46/aa76467f63a2f023a5d484ba26aa0849.jpg">
+        </div>
+    </div>
+    <script src="medical.js"></script>
+    <script src="text.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbySPuq9f99ZbPHzZ4f3PaQ0WvIxr3STA0Ovg4ofpAItIGGliyEn6IkHimZkW7377vGi/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg");
+    
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Mesaage sent succesfully!"
+                setTimeout(function(){
+                    msg.innerHTML = "";
+                }, 2000)
+                form.reset();
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
